@@ -1,0 +1,155 @@
+<style type="text/css">
+
+Body {
+BACKGROUND-COLOR: #ffffff;
+BACKGROUND-POSITION: top;
+MARGIN-TOP: 0pt;
+}
+
+/*Header table*/
+TABLE {MARGIN-TOP: 0pt}
+TABLE.HeaderTableBG {BACKGROUND: #000000}
+TABLE.HeaderTable {BACKGROUND: #ffffff}
+
+TD {MARGIN-TOP: 0pt}
+TD.HeaderLeft
+{
+BACKGROUND-IMAGE: url(/web/20150412055438im_/http://www.cybersportsusa.com/webgames/images/WebcastHeaderV1BB_left.gif);
+BACKGROUND-REPEAT: no-repeat;
+BACKGROUND-POSITION: left
+}
+TD.HeaderMiddle
+{
+BACKGROUND-IMAGE:url(/web/20150412055438im_/http://www.cybersportsusa.com/webgames/images/WebcastHeaderV1BB_middle.gif);
+BACKGROUND-REPEAT: no-repeat;
+BACKGROUND-POSITION: center
+}
+TD.HeaderRight
+{
+BACKGROUND-IMAGE:url(/web/20150412055438im_/http://www.cybersportsusa.com/webgames/images/WebcastHeaderV1BB_right.gif);
+BACKGROUND-REPEAT: no-repeat;
+BACKGROUND-POSITION: right
+}
+/*scoreboard*/
+TABLE.ScoreboardTable {BACKGROUND: #000000}
+TABLE.Table1 {BACKGROUND: #ffffff}
+TABLE.Table2 {BACKGROUND: #ffffff}
+TABLE.Table3 {BACKGROUND: #ffffff}
+TD.HomeSchoolName {BACKGROUND: #000000}
+TD.HomeTeamName {BACKGROUND: #333333}
+TD.HomeScore {BACKGROUND: #ffffff}
+TD.Quarters {BACKGROUND: #cccccc}
+TABLE.QuartersHot {BACKGROUND: #ffffff}
+TD.TimeOuts {BACKGROUND: #cccccc}
+TABLE.ClockBorder {BACKGROUND: #000000}
+TABLE.Clock {BACKGROUND: #ffffff}
+TD.AwaySchoolName {BACKGROUND: #000000}
+TD.AwayTeamName {BACKGROUND: #333333}
+TD.AwayScore {BACKGROUND: #ffffff}
+TR.ReportsBar {BACKGROUND: #cccccc}
+font.Reports {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:12px; FONT-WEIGHT:normal; LETTER-SPACING:1pt}
+
+/*stats tables*/
+TD.HomeStatsBG {BACKGROUND: #336699}
+TD.AwayStatsBG {BACKGROUND: #ffcc33}
+TABLE.HeaderStatsBorder {BACKGROUND: #666666}
+TABLE.HeaderStatsBG {BACKGROUND: #E9E8E3}
+TD.StatsLabelBG {BACKGROUND: #cccccc}
+TABLE.PlayByPlayBG {BACKGROUND: #ffffff}
+TD.PlayByPlayXBG {BACKGROUND: #ffffff}
+TD.PlayByPlayYBG {BACKGROUND: #ffffcc}
+TABLE.PlayerStatsBorder {BACKGROUND: #000000}
+TABLE.PlayerStatsBG {BACKGROUND: #E9E8E3}
+TD.PlayerStatsLabelBG {BACKGROUND: #cccccc}
+TABLE.FooterBorder {BACKGROUND: #666666}
+TABLE.FooterBG {BACKGROUND: #E9E8E3}
+TD.FooterCall {BACKGROUND: #cccccc}
+TD.FooterCopyright {BACKGROUND: #ffffff}
+
+
+/*left side*/
+font {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:10px; FONT-WEIGHT:normal; LETTER-SPACING:1pt}
+font.HomeSchoolName {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:14px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.HomeTeamName {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.HomeScore {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:40px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.HomeTimeOutsLabel {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.HomeTimeOuts {COLOR:#993333; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.HomeLabel {COLOR:#000000; FONT-FAMILY:helvetica,arial,verdana; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:1pt}
+font.HomeTeamStatsLabel {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:16px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.HomeTeamPercentage {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:12px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.HomeTeamPercentageSet {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.HomeTeamPercentageSetX {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.HomeTeamStatistics {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:12px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.HomeTeamStatisticsSet {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.HomeTeamStatisticsSetX {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+
+/*middle*/
+font.VS {COLOR:#008000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:14px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.Quarters {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.QuartersHOT {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:13px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.QuartersOT {COLOR:#ff0000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.Clock {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:25px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+A.StatCentral {COLOR:#000000; FONT-FAMILY:helvetica,arial,verdana; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:1pt}
+font.Date {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.LiveStatistics {COLOR:#993333; FONT-FAMILY:helvetica,arial,verdana; FONT-SIZE:13px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.Message {COLOR:#993333; FONT-FAMILY:helvetica,arial,verdana; FONT-SIZE:13px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.PlayByPlayLabel {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.PlayByPlayX {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.PlayByPlayXBOLD {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.PlayByPlayY {COLOR:#000000; BACKGROUND-COLOR:#FFFFCC; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.PlayByPlayYBOLD {COLOR:#000000; BACKGROUND-COLOR:#FFFFCC; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.PlayerStatisticsLabel {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:12px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+table.PlayerStatsBG2 {BACKGROUND: #cccccc}
+td.PlayerStatsBG2 {BACKGROUND: #cccccc}
+table.PlayerStatsColHeader {BACKGROUND: #666666}
+tr.PlayerStatsColHeader {BACKGROUND: #000000}
+td.PlayerStatsColHeader {BACKGROUND: #666666}
+tr.HomePlayerBG {BACKGROUND: #336699}
+td.HomePlayerBG {BACKGROUND: #336699}
+tr.HomePlayerBG-IN {BACKGROUND: #FFFFCC}
+tr.AwayPlayerBG {BACKGROUND: #FFCC33}
+td.AwayPlayerBG {BACKGROUND: #FFCC33}
+tr.AwayPlayerBG-IN {BACKGROUND: #FFFFCC}
+font.PlayerStatsColHeaders {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:10px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.HomePlayerStatistics {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:9px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.HomePlayerStatisticsIN {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:9px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.AwayPlayerStatistics {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:9px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.AwayPlayerStatisticsIN {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:9px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.CallToAction {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.GameMonitor {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.Copyright {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:9px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+
+
+/*right side*/
+font.AwaySchoolName {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:14px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.AwayTeamName {COLOR:#ffffff; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.AwayScore {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:40px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.AwayTimeOutsLabel {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.AwayTimeOuts {COLOR:#993333; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.AwayLabel {COLOR:#000000; FONT-FAMILY:helvetica,arial,verdana; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:1pt}
+font.AwayTeamStatsLabel {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:16px; FONT-WEIGHT:bold; LETTER-SPACING:1pt}
+font.AwayTeamPercentages {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:12px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.AwayTeamPercentagesSet {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.AwayTeamPercentagesSetX {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.AwayTeamStatistics {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:12px; FONT-WEIGHT:bold; LETTER-SPACING:0pt}
+font.AwayTeamStatisticsSet {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+font.AwayTeamStatisticsSetX {COLOR:#000000; FONT-FAMILY:arial,verdana,helvetica; FONT-SIZE:11px; FONT-WEIGHT:normal; LETTER-SPACING:0pt}
+
+
+A {COLOR: black; TEXT-DECORATION: underline}
+A:Active {COLOR: black; TEXT-DECORATION: underline}
+A:Link {COLOR: black; TEXT-DECORATION: underline}
+A:Visited {COLOR: black; TEXT-DECORATION: underline}
+A:hover {COLOR: red; TEXT-DECORATION: underline}
+
+A.WhiteLink {COLOR: white; TEXT-DECORATION: underline}
+A.WhiteLink:active {COLOR: white; TEXT-DECORATION: underline}
+A.WhiteLink:Link {COLOR: white; TEXT-DECORATION: underline}
+A.WhiteLink:Visited {COLOR: white; TEXT-DECORATION: underline}
+A.WhiteLink:hover {COLOR: black; TEXT-DECORATION: underline}
+A.RedLink {COLOR: red; TEXT-DECORATION: underline}
+A.RedLink:active {COLOR: black; TEXT-DECORATION: underline}
+A.RedLink:Link {COLOR: red; TEXT-DECORATION: underline}
+A.RedLink:Visited {COLOR: red; TEXT-DECORATION: underline}
+A.RedLink:hover {COLOR: black; TEXT-DECORATION: underline}
+</style>
