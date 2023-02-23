@@ -23,7 +23,21 @@ namespace Basketball
                 Console.Write($"Version: {version.Major}.{version.Minor}.{version.Build}.{version.Revision}");
             }
 
-            CommandLine.Parser.Default.ParseArguments<Options>(args).WithParsed(Run);
+            var parserResult = Parser.Default.ParseArguments<Options>(args);
+            if (parserResult.Tag == ParserResultType.Parsed)
+            {
+                Run(parserResult.Value);
+            }
+            else
+            {
+                DisplayGui();
+            }
+        }
+
+        private static void DisplayGui()
+        {
+            var mainForm = new MainForm();
+            mainForm.ShowDialog();
         }
 
         static void HandleParseError(IEnumerable<Error> errors)
