@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Reflection;
-using System.Text;
 using CommandLine;
 
 namespace Basketball
@@ -20,7 +18,7 @@ namespace Basketball
 
             if (version != null)
             {
-                Console.Write($"Version: {version.Major}.{version.Minor}.{version.Build}.{version.Revision}");
+                Console.WriteLine($"Version: {version.Major}.{version.Minor}.{version.Build}.{version.Revision}");
             }
 
             CommandLine.Parser.Default.ParseArguments<Options>(args).WithParsed(Run);
@@ -37,6 +35,22 @@ namespace Basketball
 
         static void Run(Options options)
         {
+            if (options.Verbose)
+            {
+                Console.WriteLine($"     WatchFolder: {options.WatchFolder}");
+                Console.WriteLine($"    OutputFolder: {options.OutputFolder}");
+                Console.WriteLine($"    LeftImageUrl: {options.LeftImagePath}");
+                Console.WriteLine($"   RightImageUrl: {options.RightImagePath}");
+                Console.WriteLine($"      CenterHtml: {options.CenterHtml}");
+                Console.WriteLine($"        FTP.Host: {options.FtpHost}");
+                Console.WriteLine($"      FTP.Folder: {options.FtpFolder}");
+                Console.WriteLine($"    FTP.Username: {options.FtpUsername}");
+                Console.WriteLine($"    FTP.Password: {options.FtpPassword}");
+                Console.WriteLine($"FTP.LiveFileName: {options.FtpLiveFile}");
+                Console.WriteLine($" FTP.BoxFileName: {options.FtpBoxFile}");
+                Console.WriteLine($"      AnalyticId: {options.AnalyticId}"); ;
+            }
+
             if (!Directory.Exists(options.OutputFolder))
             {
                 Directory.CreateDirectory(options.OutputFolder);
@@ -54,7 +68,7 @@ namespace Basketball
             //watcher.Renamed += new RenamedEventHandler(watcher_Renamed);
             if (options.Verbose)
             {
-                Console.WriteLine("FileSystemWatcher ready and listening to changes in:" + watcher.Path);
+                Console.WriteLine("FileSystemWatcher ready and listening to changes in: " + watcher.Path);
             }
 
             new System.Threading.AutoResetEvent(false).WaitOne();
@@ -81,7 +95,10 @@ namespace Basketball
                         }
                         string[] newLines = new string[originalLines.Length];
                         Array.Copy(originalLines, 12, newLines, 0, originalLines.Length - 12);
+                        string homeTeam = originalLines[1];
+                        string awayTeam = originalLines[2];
                         newLines[5] = newLines[5].Replace(".asp", ".css");
+                        newLines[5] += $"{Environment.NewLine}<title>{awayTeam} vs {homeTeam}</title>";
                         if (!string.IsNullOrEmpty(options.AnalyticId))
                         {
                             newLines[5] += $"{Environment.NewLine}<script async src=\"https://www.googletagmanager.com/gtag/js?id={options.AnalyticId}\"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){{dataLayer.push(arguments);}}gtag('js', new Date());gtag('config', '{options.AnalyticId}');</script>";

@@ -16,7 +16,7 @@ namespace Basketball
 
         [Option("LeftImageUrl", Required = false, HelpText = "Url for the image to show on the left hand side")]
         public string LeftImagePath { get; set; }
-        [Option("RightImagePath", Required = false, HelpText = "Url for the image to show on the right hand side")]
+        [Option("RightImageUrl", Required = false, HelpText = "Url for the image to show on the right hand side")]
         public string RightImagePath { get; set; }
         [Option("CenterHtml", Required = false, HelpText = "Html for the center")]
         public string CenterHtml { get; set; }
